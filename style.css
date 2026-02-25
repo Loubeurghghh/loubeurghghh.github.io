@@ -1,8 +1,0 @@
-header .logo {
-  max-width: 600px;  /* caps the size on big screens */
-  width: 100%;       /* scales down for smaller screens */
-  height: auto;      /* keeps aspect ratio */
-  display: block;
-  margin: 0 auto;
-  border: 5px solid red;
-}

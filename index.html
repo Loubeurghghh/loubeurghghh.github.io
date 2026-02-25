@@ -35,7 +35,26 @@ body::after {
 
 header {
   text-align: center;
-  padding: 140px 20px 80px;
+  padding: 80px 20px;  /* responsive */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  width: 100%;          /* fill container width */
+  max-width: 600px;     /* caps desktop size */
+  height: auto;         /* preserves aspect ratio */
+  margin: 0 auto 40px;
+  filter: drop-shadow(0 0 20px rgba(161,18,18,0.5));
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 100%;
+    max-width: 85%;
+    margin-bottom: 30px;
+  }
 }
 
 h1 {
