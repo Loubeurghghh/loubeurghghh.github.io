@@ -1,22 +1,7 @@
-header {
-  text-align: center;
-  padding: 80px 20px;  /* responsive */
-  width: 100%;
-  margin: 0 auto;
-}
-
-.logo {
+header .logo {
+  max-width: 600px;  /* caps the size on big screens */
+  width: 100%;       /* scales down for smaller screens */
+  height: auto;      /* keeps aspect ratio */
   display: block;
-  width: 100%;          /* fill container width */
-  max-width: 600px;     /* caps desktop size */
-  height: auto;         /* preserves aspect ratio */
-  margin: 0 auto 40px;
-  filter: drop-shadow(0 0 20px rgba(161,18,18,0.5));
-}
-
-@media (max-width: 600px) {
-  .logo {
-    max-width: 90%;      /* smaller on phones */
-    margin-bottom: 30px;
-  }
+  margin: 0 auto;
 }
