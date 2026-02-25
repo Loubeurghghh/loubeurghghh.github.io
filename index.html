@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Subtle grain effect */
@@ -78,8 +79,10 @@ h1 {
 }
 
 .links a {
-  display: inline-block;
-  margin: 12px 20px;
+  display: block;
+  width: 90%;        /* scales with screen */
+  max-width: 220px;  /* optional cap */
+  margin: 12px auto;
   padding: 14px 28px;
   border: 1px solid #a11212;
   color: #a11212;
@@ -87,6 +90,13 @@ h1 {
   letter-spacing: 2px;
   font-size: 0.85rem;
   transition: all 0.3s ease;
+}
+
+.links a {
+  display: block;
+  width: 90%;        /* scales with screen */
+  max-width: 220px;  /* optional cap */
+  margin: 12px auto;
 }
 
 .links a:hover {
