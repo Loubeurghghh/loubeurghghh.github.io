@@ -1,0 +1,7 @@
+.logo {
+  width: clamp(200px, 80vw, 700px);  /* scales smoothly between 200px and 700px */
+  height: auto;
+  display: block;
+  margin: 0 auto 40px;
+  filter: drop-shadow(0 0 20px rgba(161,18,18,0.5));
+}
