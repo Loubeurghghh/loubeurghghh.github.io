@@ -78,39 +78,6 @@ h1 {
   opacity: 0.5;
 }
 
-.links {
-  margin-top: 60px;
-}
-
-.links a {
-  display: flex;
-  justify-content: center;
-  width: 90%;        /* scales with screen */
-  max-width: 220px;  /* optional cap */
-  margin: 12px auto;
-  padding: 14px 28px;
-  border: 1px solid #a11212;
-  color: #a11212;
-  text-decoration: none;
-  letter-spacing: 2px;
-  font-size: 0.85rem;
-  transition: all 0.3s ease;
-}
-
-.links a {
-  display: flex;
-  justify-content: center;
-  width: 90%;        /* scales with screen */
-  max-width: 220px;  /* optional cap */
-  margin: 12px auto;
-}
-
-.links a:hover {
-  background: #a11212;
-  color: #000;
-  box-shadow: 0 0 20px rgba(161,18,18,0.6);
-}
-
 .section {
   max-width: 800px;
   margin: 80px auto;
@@ -140,15 +107,32 @@ h1 {
     gap: 15px;
   }
 
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .social-links a {
+    color: #a11212;
+    font-size: 28px;
+    transition: all 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+
+    .footer-text {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    opacity: 0.5;
+  }
+
 @media (max-width: 600px) {
   h1 {
     font-size: 2.5rem;
-  }
-
-  .links a {
-    display: block;
-    width: 220px;
-    margin: 12px auto;
   }
 }
 </style>
@@ -162,7 +146,7 @@ h1 {
   </header>
 
   <footer>
-    <div class="links">
+    <div class="social-links">
       <a href="https://instagram.com/hexbloodmusic" target="_blank" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
   </a>
