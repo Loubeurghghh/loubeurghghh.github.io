@@ -83,7 +83,8 @@ h1 {
 }
 
 .links a {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 90%;        /* scales with screen */
   max-width: 220px;  /* optional cap */
   margin: 12px auto;
@@ -97,7 +98,8 @@ h1 {
 }
 
 .links a {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 90%;        /* scales with screen */
   max-width: 220px;  /* optional cap */
   margin: 12px auto;
@@ -127,14 +129,16 @@ h1 {
   line-height: 1.6;
 }
 
-footer {
-  margin-top: auto;
-  padding: 40px 20px;
-  text-align: center;
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  opacity: 0.3;
-}
+  footer {
+    margin-top: auto;
+    padding: 30px 20px;
+    text-align: center;
+    background: #0b0b0b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 
 @media (max-width: 600px) {
   h1 {
@@ -155,7 +159,9 @@ footer {
 <header>
    <img src="images/HexbloodLogoTransparent.png" alt="Hexblood Logo" class="logo"> 
   <div class="tagline">Sludge • Doom • Riffs</div>
+  </header>
 
+  <footer>
     <div class="links">
       <a href="https://instagram.com/hexbloodmusic" target="_blank" aria-label="Instagram">
     <i class="fab fa-instagram"></i>
@@ -173,10 +179,7 @@ footer {
     <i class="fas fa-envelope"></i>
   </a>
     </div>
-  </header>
-
-  <footer>
-    © 2026 Hexblood
+  <div class="footer-text">© 2026 Hexblood</div>
   </footer>
 
 </body>
